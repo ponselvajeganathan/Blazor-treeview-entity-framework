@@ -1,17 +1,66 @@
 # Blazor-treeview-entity-framework
-A quick getting started project to create an Entity Framework application with Blazor TreeView component. The Blazor TreeView is a graphical user interface Component that allows you to represent hierarchical data in a tree structure. It has great performance combined with advanced features like load on demand, checkbox support, multiple selection, tree navigation, drag and drop, tree node editing, and template support.
 
-## Project pre-requisites
-Make sure that you have the compatible versions of Visual Studio Code and .NET Core SDK 3.1.2 in your machine before starting to work on this project.
+**Repository Description**  
+This repository contains a quick getting‑started Blazor sample that demonstrates how to build an Entity Framework–backed application using the Syncfusion Blazor TreeView component.
 
-## How to run this application?
-To run this application, you need to first clone the `Blazor-treeview-entity-framework` repository and then open the project or solution file in Visual Studio 2019. 
+The Syncfusion Blazor TreeView component provides a graphical user interface for representing hierarchical data in a tree structure. It offers high performance along with advanced features such as load‑on‑demand, checkbox support, multiple selection, tree navigation, drag‑and‑drop, tree node editing, and template customization.
 
-* Need to change the Database connection string in Shared/DataAccess/DataContext.cs
+## Project Overview
+The purpose of this project is to help developers understand how to integrate the Syncfusion Blazor TreeView component with Entity Framework to display hierarchical data from a database. It showcases how database‑driven data can be visualized in a structured tree format within a Blazor application.
 
+## Features
+- Integration of the Syncfusion Blazor TreeView component  
+- Entity Framework–based data binding  
+- Display hierarchical data in a tree structure  
+- Load‑on‑demand support for large datasets  
+- Checkbox, selection, and tree navigation features  
+- Drag‑and‑drop and node editing capabilities  
+- Template customization for tree nodes  
+
+## Prerequisites
+Ensure the following requirements are met before running this project:
+- Visual Studio Code or Visual Studio 2019  
+- .NET Core SDK 3.1.2  
+- SQL Server LocalDB  
+
+## Installation and Running the Application
+
+### Clone and Open the Project
+1. Clone the repository.
+2. Open the project or solution file in Visual Studio 2019.
+
+### Configure the Database Connection
+Update the database connection string in the following file:
+`Shared/DataAccess/DataContext.cs`
+Example configuration:
+```csharp
+optionsBuilder.UseSqlServer(
+  @"Data Source=(LocalDB)\MSSQLLocalDB;
+    AttachDbFilename='D:\blazor\TreeView-EntityFramework\SQLTreeView\Shared\App_Data\NORTHWND.MDF';
+    Integrated Security=True;
+    Connect Timeout=30");
 ```
- optionsBuilder.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\blazor\TreeView-EntityFramework\SQLTreeView\Shared\App_Data\NORTHWND.MDF';Integrated Security=True;Connect Timeout=30");
+### Run the Application
+1. Build the solution.
+2. Run the project in Visual Studio.
+3. Open the application in the browser to view the TreeView rendered with data from the database.
 
-```
+## Usage
+Run the application to explore how hierarchical data from Entity Framework is displayed using the Blazor TreeView. You can expand nodes, load data dynamically, interact with checkboxes, and perform drag‑and‑drop operations.
 
-* Now, run the run the project Visual Studio and able to get the output in Browser.
+## Documentation
+- General Syncfusion documentation:
+https://help.syncfusion.com/
+- Blazor Introduction:
+https://blazor.syncfusion.com/documentation/introduction
+- Blazor TreeView Getting Started:
+https://blazor.syncfusion.com/documentation/treeview/getting-started
+
+## Troubleshooting
+- Ensure the database file path in the connection string is valid.
+- Verify that SQL Server LocalDB is installed and accessible.
+- Rebuild the solution if Entity Framework or TreeView components fail to load.
+- Check browser and application logs for runtime errors.
+
+## Support
+For detailed API references, configuration options, and advanced usage examples, refer to the Syncfusion Blazor TreeView documentation links provided above.
