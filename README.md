@@ -74,24 +74,6 @@ dotnet run
 6. Open the local URL displayed in the terminal.
 7. Verify that data from the configured database is displayed in the TreeView component.
 
-## Project Structure
-
-`SQLTreeView.sln` — solution file used to open, build, and run the sample.
-
-`README.md` — repository documentation and setup instructions.
-
-`SQLTreeView/[VERIFY: project file]` — contains project configuration, package references, and target framework settings.
-
-`SQLTreeView/Shared/DataAccess/DataContext.cs` — configures Entity Framework database access and SQL Server connection settings.
-
-`SQLTreeView/[VERIFY: Pages file hosting TreeView component]` — contains the Syncfusion TreeView implementation and component configuration.
-
-`SQLTreeView/[VERIFY: data model files]` — entity classes used to represent hierarchical database records.
-
-`SQLTreeView/[VERIFY: application startup file]` — configures Blazor services, dependency injection, and application startup logic.
-
-`SQLTreeView/[VERIFY: configuration files]` — application and environment-specific configuration settings.
-
 ## Support and Feedback
 
 - For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
